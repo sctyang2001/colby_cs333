@@ -1,0 +1,30 @@
+<!-- 
+simpleAdd.html (EXTENSION): Show number of eggs on a page, and two buttons (hypers). When 
+you click on one, related operations starts a pop-up box and adds or minus one egg.
+(HTML page with JavaScript code embeded)
+
+Scottie YANG Miaoyi
+Feb 24, 2021 
+-->
+
+<html>
+    <head> 
+    <!-- Next sentence declares the use of script language, and we declare JS as the script
+    language. The scope of the JS language is only between the <script> and </script>. -->
+    <script type="text/javascript">
+        var currentValue = 0;
+        var add = function(valueToAdd){
+            alert("adding: " + valueToAdd);
+            currentValue += valueToAdd;
+            document.getElementById('number').innerHTML = currentValue;
+        };
+    </script>
+
+    </head>
+    <body>
+        <div id="text">Number of eggs:<span id="number">0</span><div>
+        <a href="javascript:add(1)">Plus 1</a>
+        <a href="javascript:add(-1)">Minus 1</a>
+
+    </body>
+</html> 

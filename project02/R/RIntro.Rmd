@@ -1,0 +1,54 @@
+---
+title: "RIntro"
+output:
+  pdf_document: default
+  html_document: default
+urlcolor: blue
+---
+RIntro.rmd: First prints a hello world line, then start doing some basic data manipulation. 
+(Knitted PDF attached)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+----
+
+Prints out something, hopefully, hello world.
+
+```{r}
+print("Hello world!")
+```
+
+(EXTENSION) As R is a data-analysis language, I decided to try manipulate some simple operations on a dataset. From a famous dataset I grabbed a nutrition study. Let's look at it: it contains data on 315 patients undergoing elective surgery, among which are personal characteristics, dietary habits, and plasma concentrations of retinol, beta-carotene, and other cartenoids.
+
+```{r load-data}
+library(Lock5Data)
+data("NutritionStudy")
+```
+
+We could see the structure with the function `str()`.
+
+```{r}
+str(NutritionStudy)
+```
+
+In the blank code chunk below we generate a 5-number summary the variable `Age`.
+
+```{r}
+summary(NutritionStudy$Age)
+```
+
+Use the blank code chunk below to find the mean and the median for the variable `Cholesterol`.
+
+```{r}
+mean(NutritionStudy$Cholesterol)
+median(NutritionStudy$Cholesterol)
+```
+
+We use the command `hist()` to view the distribution of the `Cholesterol` variable, with assigned bin value.
+
+```{r}
+hist(NutritionStudy$Age, breaks = c(10, 20, 30, 40, 50, 60, 70, 80, 90))
+hist(NutritionStudy$Cholesterol, breaks = c(0, 200, 400, 600, 800, 1000))
+```
