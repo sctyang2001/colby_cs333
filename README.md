@@ -3,8 +3,8 @@ Coursework and projects for Colby course CS333: Programming Languages (2022S, Ta
 This course is basiclly a compiler course. Every project is done by at least two language (C and a language of our choice).
 
 (Every Project contains a README describes what to do and what the outputs are.)
-Project 01: C Programming Introduction (https://cs.colby.edu/courses/S22/cs333/projects/p1.html)
 
+Project 01: C Programming Introduction (https://cs.colby.edu/courses/S22/cs333/projects/p1.html)
 Project 02: Lexical Analysis (https://cs.colby.edu/courses/S22/cs333/projects/p2.html)
 Project 03: C Syntax (https://cs.colby.edu/courses/S22/cs333/projects/p3.html)
 Project 04: C C Semantics (https://cs.colby.edu/courses/S22/cs333/projects/p4.html)
