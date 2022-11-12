@@ -1,6 +1,6 @@
 # colby_cs333
 Coursework and projects for Colby course CS333: Programming Languages (2022S, Taylor). 
-This course is basiclly a compiler course. Every project is done by at least two language (C and a language of our choice).
+This course is basiclly a compiler course. Every project is done by at least two language (C and a language of choice).
 
 (Every Project contains a README describes what to do and what the outputs are.)
 
